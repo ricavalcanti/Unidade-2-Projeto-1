@@ -49,6 +49,9 @@ float Poligono::area()
         soma_positiva = soma_positiva + (this->vertices[i].getX()) * (this->vertices[i+1].getY());
         soma_negativa = soma_negativa + (this->vertices[i].getY()) * (this->vertices[i+1].getX());
     }
+    soma_positiva = soma_positiva + (this->vertices[n_vertices-1].getX() * this->vertices[0].getY());
+    soma_negativa = soma_negativa + (this->vertices[n_vertices-1].getY() * this->vertices[0].getX());
+
     return abs((soma_positiva - soma_negativa)/2.0);
 }
 
