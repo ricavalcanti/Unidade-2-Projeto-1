@@ -12,7 +12,8 @@ int main()
     cout<<endl<<"Area: "<<r.area()<<endl;
 
     r.move(-3, 4);
-    cout<<"Nova area: "<<r.area()<<endl;
+    r.imprime();
+    cout<<endl<<"Area: "<<r.area()<<endl;
 
 
     return 0;
